@@ -1,5 +1,5 @@
 const Telegraf = require('telegraf');
-const bot = new Telegraf('1163364925:AAGKyPE7oysNBHtJXlc5Oqfq6NVV7vJMAVE');
+const bot = new Telegraf(process.env.BOT_TOKEN);
 bot.start((message) => {
   console.log('started:', message.from.id)
   return message.reply('Ciao, scrivi qualcosa e io la ripeterò 😄');
